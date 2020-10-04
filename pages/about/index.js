@@ -1,4 +1,5 @@
 import Router from 'next/router'
+import MainLayout from '../../components/MainLayout'
 
 const About = () => {
   const handlerGoHome = () => {
@@ -6,11 +7,13 @@ const About = () => {
   }
 
   return (
-    <div className="main">
-      <h1>About Page</h1>
-      <button onClick={handlerGoHome}>Go back to Home</button>
-      <button onClick={() => Router.push('/posts')}>Go back to Posts</button>
-    </div>
+    <MainLayout title="About">
+      <div className="main">
+        <h1>About Page</h1>
+        <button onClick={handlerGoHome}>Go back to Home</button>
+        <button onClick={() => Router.push('/posts')}>Go back to Posts</button>
+      </div>
+    </MainLayout>
   )
 }
 

@@ -1,18 +1,12 @@
-import Head from 'next/head'
+import MainLayout from '../components/MainLayout'
 
 const Posts = () => {
   return (
-    <>
-      <Head>
-        <title>Posts | Next project</title>
-        <meta name="charSet" content="utf-8" />
-        <meta name="keywords" content="nextjs, javascript, react" />
-        <meta name="description" content="This is test project with nextjs" />
-      </Head>
+    <MainLayout title="Posts">
       <div className="main">
         <h1>Posts Page</h1>
       </div>
-    </>
+    </MainLayout>
   )
 }
 
