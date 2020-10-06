@@ -12,13 +12,12 @@
   width: 100%;
   max-width: 600px;
   padding: 10px;
-  background-color: #ff0;
   /* padding: 5rem 0; */
-  /* flex: 1;
+  flex: 1;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center; */
+  align-items: center;
 }
 
 .footer {
@@ -43,6 +42,18 @@
 .title a {
   color: #0070f3;
   text-decoration: none;
+}
+
+.superLink {
+  display: inline-block;
+  vertical-align: baseline;
+  padding: 5px;
+  background-color: darkblue;
+  color: white;
+}
+
+.superLink:hover {
+  background-color: blue;
 }
 
 .title a:hover,
