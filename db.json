@@ -1,0 +1,19 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "Javascript Post",
+      "body": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut et dolorum tempora corrupti velit molestias rerum unde pariatur necessitatibus doloribus?"
+    },
+    {
+      "id": 2,
+      "title": "Next Post",
+      "body": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, optio itaque adipisci ad quam fugiat."
+    },
+    {
+      "id": 3,
+      "title": "React Post",
+      "body": "React Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sequi, ipsa!"
+    }
+  ]
+}
