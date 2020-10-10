@@ -9,6 +9,7 @@
     "mockServer": "json-server -w db.json -p 4200 -d 1750"
   },
   "dependencies": {
+    "dotenv": "^8.2.0",
     "json-server": "^0.16.2",
     "next": "9.5.3",
     "nextjs-progressbar": "^0.0.6",
