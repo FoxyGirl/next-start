@@ -6,7 +6,7 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "mockServer": "json-server -w db.json -p 4200 -d 450"
+    "mockServer": "json-server -w db.json -p 4200 -d 1750"
   },
   "dependencies": {
     "json-server": "^0.16.2",
