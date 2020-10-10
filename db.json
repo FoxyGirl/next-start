@@ -15,5 +15,8 @@
       "title": "React Post",
       "body": "React Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sequi, ipsa!"
     }
-  ]
+  ],
+  "about": {
+    "title": "Info about us"
+  }
 }
