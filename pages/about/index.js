@@ -26,13 +26,13 @@ const About = ({ about }) => {
 //     return { about: null }
 //   }
 
-//   const res = await fetch(`${baseUrl}/about`)
+//   const res = await fetch(`${process.env.API_URL}/about`)
 //   const about = await res.json()
 //   return { about }
 // }
 
 export const getServerSideProps = async (ctx) => {
-  const res = await fetch(`${baseUrl}/about`)
+  const res = await fetch(`${process.env.API_URL}/about`)
   const about = await res.json()
   return { props: { about } }
 }

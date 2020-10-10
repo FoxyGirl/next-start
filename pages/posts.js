@@ -1,6 +1,5 @@
 import { useEffect, useState } from 'react'
 import Link from 'next/link'
-import { baseUrl } from '../constants'
 import MainLayout from '../components/MainLayout'
 
 const Posts = ({ posts: serverPosts }) => {
@@ -9,7 +8,7 @@ const Posts = ({ posts: serverPosts }) => {
 
   useEffect(() => {
     const load = async () => {
-      const res = await fetch(`${baseUrl}/posts`)
+      const res = await fetch(`${process.env.API_URL}/posts`)
       const posts = await res.json()
       setPosts(posts)
     }
@@ -48,13 +47,13 @@ Posts.getInitialProps = async ({ req }) => {
     return { posts: null }
   }
 
-  const res = await fetch(`${baseUrl}/posts`)
+  const res = await fetch(`${process.env.API_URL}/posts`)
   const posts = await res.json()
   return { posts }
 }
 
 // export const getServerSideProps = async (ctx) => {
-//   const res = await fetch(`${baseUrl}/posts`)
+//   const res = await fetch(`${process.env.API_URL}/posts`)
 //   const posts = await res.json()
 //   return { props: { posts } }
 // }

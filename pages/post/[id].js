@@ -1,7 +1,6 @@
 import { useEffect, useState } from 'react'
 import { useRouter } from 'next/router'
 import Link from 'next/link'
-import { baseUrl } from '../../constants'
 import MainLayout from '../../components/MainLayout'
 import styles from '../../styles/Posts.module.scss'
 
@@ -11,7 +10,7 @@ const Post = ({ post: serverPost }) => {
 
   useEffect(() => {
     const load = async () => {
-      const res = await fetch(`${baseUrl}/posts/${router.query.id}`)
+      const res = await fetch(`${process.env.API_URL}/posts/${router.query.id}`)
       const post = await res.json()
       setPost(post)
     }
@@ -50,7 +49,7 @@ Post.getInitialProps = async ({ query, req }) => {
   }
 
   const { id } = query
-  const res = await fetch(`${baseUrl}/posts/${id}`)
+  const res = await fetch(`${process.env.API_URL}/posts/${id}`)
   const post = await res.json()
   return { post }
 }
